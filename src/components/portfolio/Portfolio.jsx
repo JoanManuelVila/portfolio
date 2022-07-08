@@ -1,7 +1,7 @@
 import {
   featuredPortfolio,
-  webPortfolio,
-  mobilePortfolio,
+  frontendPortfolio,
+  backendPortfolio,
   designPortfolio,
   contentPortfolio
 } from '../../data';
@@ -14,8 +14,8 @@ export default function Portfolio() {
   const [data, setData] = useState([])
   const list = [
     { id: 'featured', title: 'Featured' },
-    { id: 'web', title: 'Web App' },
-    { id: 'mobile', title: 'Mobile App' },
+    { id: 'frontend', title: 'Frontend App' },
+    { id: 'backend', title: 'Backend App' },
     { id: 'design', title: 'Design' },
     { id: 'content', title: 'Content' }
   ]
@@ -25,11 +25,11 @@ export default function Portfolio() {
       case "featured":        
         setData(featuredPortfolio)    
         break;
-      case "web":        
-        setData(webPortfolio)    
+      case "frontend":        
+        setData(frontendPortfolio)    
         break;
-      case "mobile":        
-        setData(mobilePortfolio)    
+      case "backend":        
+        setData(backendPortfolio)    
         break;
       case "design":        
         setData(designPortfolio)    
